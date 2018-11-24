@@ -119,6 +119,16 @@ $ python app.py
 
 You will be able to access the api locally in the `8080` port.
 
+### Run the app in a with containers
+
+You can run the application using the docker-compose.yml executing the following command:
+
+```bash
+docker-compose up --build
+```
+
+You will be able to access the api locally in the `8080` port.
+
 #### The API
 
 - `/api/v1/restaurant`: Returns a list containing all the restaurants.
@@ -211,7 +221,7 @@ If you have any doubt, don't hesitate to [open an issue](https://github.com/inte
 
 We will notify the winner using our social media channels.
 
-### Challenge 1. The API returns a list instead of an object
+### Challenge 1. The API returns a list instead of an object 
 
 As you can see, the API returns a list in the two exposed endpoints:
 
@@ -239,7 +249,9 @@ What about containers? As this moment *(2018)*, containers are a standard in ord
 
 We need to have a mongodb database to make this application run. So, we need a mongodb container with some data. Please, use the [restaurant](./data/restaurant.json) dataset to load the mongodb collection before running the application.
 
-The loaded mongodb collection must be named: `restaurant`. Do you have to write code or just write a Docker file?
+The loaded mongodb collection must be named: `restaurant`. Do you have to write code or just write a Docker file? 
+
+> Just write a Dockerfile.
 
 ### Challenge 5. Docker Compose it
 
